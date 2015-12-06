@@ -1,0 +1,22 @@
+{
+  "name": "mean-walking-skeleton",
+  "version": "1.0.0",
+  "description": "MEAN Walking Skeleton",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -w ./server server.js ./test/tests.js"
+  },
+  "keywords": [
+    "MEAN"
+  ],
+  "author": "piterov1990@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "mongoose": "^4.2.9"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "supertest": "^1.1.0"
+  }
+}
