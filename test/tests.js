@@ -12,4 +12,20 @@ describe('Request to the root path', function(){
         .expect(200, done);
 
   });
+
+  it('Returns a HTML format', function(done){
+
+    request(app)
+      .get('/')
+      .expect('Content-Type',/html/, done);
+
+  });
+
+  it('Returns a MEAN App text', function(done){
+
+    request(app)
+      .get('/')
+      .expect(/mean app/i, done);
+
+  });
 });
