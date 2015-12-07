@@ -5,6 +5,12 @@ html
     title MEAN App
     link(rel="stylesheet", href="/vendor/bootstrap/dist/css/bootstrap.css")
     link(rel="stylesheet", href="/css/site.css")
-  body
+  body(ng-app="app")
+
+    nav.navbar.navbar-default
+      div.container-fluid
+        div.navbar-header
+          div.navbar-brand MEAN App
+
     block main-content
     include scripts
